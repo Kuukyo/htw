@@ -1,0 +1,11 @@
+Wir erzeugen einen InputStreamReader9 und ubergeben diesem eine Refe- ¨
+renz auf unser existierendes Objekt vom Typ InputStream.
+Objekte dieser Klasse konvertieren Bytes in Character. Character sind Schriftzeichen und Symbole, die allerdings in unterschiedlichen Kodierungen (UTF,
+ASCII etc.) als Bytes gespeichert werden k¨onnen. Diese Konvertierungen erfolgen in diesem Reader.
+Wir erzeugen ein weiteres Objekt, nun von der Klasse BufferedReader10
+Objekte dieser Klasse kennen z.B. die Symbole fur das Zeilenende. Deshalb ¨
+ist es m¨oglich, die Methode readLine aufzurufen. Der Aufruf dieser Methode
+sorgt dafur, das Objekt vom Typ ¨ BufferedReader solange Character liest, bis
+eine Zeilenende erreicht wird.
+Die Character wiederum holt sich das Objekt von Typ InputStreamReader
+indem es schrittweise Bytes liest und diese in Character umwandelt.
